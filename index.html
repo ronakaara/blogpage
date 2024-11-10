@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blog</title>
+    <!--CSS linking here-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Header with Navbar -->
+    <div style="background-color: #f2f2f2; height:80px ;" class="">
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#about">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="#lifestyle">Whats New</a></li>
+                                    <li><a class="dropdown-item" href="#technology">Technology</a></li>
+                                    <li><a class="dropdown-item" href="#sport">Sports</a></li>
+                                    <li><a class="dropdown-item" href="#travel">Travel</a></li>
+                                    <li><a class="dropdown-item" href="#business">Business</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#contact">Contact Us</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Carousel section as Hero -->
+    <div class="container-fluid d-flex py-4 justify-content-center" style="max-height: 80vh;">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"
+            style="max-width: 65vw; height: 80vh; max-height: 800px; border-radius: 10px;">
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Carousel Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="overlay"></div>
+                    <img src="images/b.jpg" class="img-fluid d-block w-100 h-100 rounded" style="object-fit: cover;"
+                        alt="blog">
+                    <div class="carousel-caption centered-caption">
+                        <h2 class="fw-bold">Explore New Destinations</h2>
+                        <p>Discover the beauty around the world with us.</p>
+                        <a href="#explore" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="overlay"></div>
+                    <img src="images/b1.jpg" class="img-fluid d-block w-100 h-100 rounded" style="object-fit: cover;"
+                        alt="blog">
+                    <div class="carousel-caption centered-caption">
+                        <h2 class="fw-bold">Unforgettable Adventures</h2>
+                        <p>Join us on journeys that leave lasting memories.</p>
+                        <a href="#adventures" class="btn btn-primary">Start Your Adventure</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="overlay"></div>
+                    <img src="images/b2.jpg" class="img-fluid d-block w-100 h-100 rounded" style="object-fit: cover;"
+                        alt="blog">
+                    <div class="carousel-caption centered-caption">
+                        <h2 class="fw-bold">Plan Your Dream Vacation</h2>
+                        <p>Let us help you make the most of your travels.</p>
+                        <a href="#vacation" class="btn btn-primary">Plan Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <!--About us-->
+    <section class="" id="about">
+        <div class="container mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/about.jpg" alt="About Us" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="about-title">About Our Blog</h2>
+                    <p class="about-description">
+                        Welcome to Blog, where we explore the fascinating world of lifestyle, technology, cooking, and
+                        social activities!
+                        Whether you're looking for the latest tech news,delicious recipes to try at home, or inspiring ideas
+                        to enhance
+                        your daily life, you'll find it all here. We are dedicated to bringing you fresh insights practical
+                        tips, and
+                        engaging stories to help you live your best life in a fast-paced, ever-changing world.
+                    </p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="blog">
+        <h1 class="text-center fs-4">My Blog</h1>
+        <div class="underline"></div>
+    </div>
+
+
+
+    <!--Travel Section-->
+
+    <section class="" id="travel">
+        <div class="container my-5">
+            <h2 class="travel fs-4">Travel</h2>
+            <div class="row">
+                <div class="travel-sec col-lg-4 mt-3">
+                    <img src="images/t1.jpg" width="400" class="img-fluid travel-image" alt="">
+                    <span class="travel-badge">Travel</span>
+                    <div style="height: 50px;" class="">
+                        <h3 class="travel-title my-3">Exploring Hidden Gems: Unforgettable Destinations</h3>
+                    </div>
+                    <p class="travel-author">By <span class="auther-name">Admin</span> May 25,2024</p>
+                    <h4 class="travel-desc">From bustling cities to serene landscapes, this blog takes you on an adventure,
+                        inspiring your next getaway with stories, guides, and breathtaking photography.....</h4>
+                </div>
+                <div class="travel-sec col-lg-4 mt-3">
+                    <img src="images/t2.jpg" width="400" class="img-fluid travel-image" alt="">
+                    <span class="travel-badge">Travel</span>
+                    <div style="height: 50px;" class="">
+                        <h3 class="travel-title my-3">A Journey Through Landscapes: Capturing Finest Moments</h3>
+                    </div>
+                    <p class="travel-author">By <span class="auther-name">Admin</span> June 10,2023</p>
+                    <h4 class="travel-desc">From bustling cities to serene landscapes, this blog takes you on an adventure,
+                        inspiring your next getaway with stories, guides, and breathtaking photography.....</h4>
+                </div>
+                <div class="travel-sec col-lg-4 mt-3">
+                    <img src="images/t3.jpg" width="400" class="img-fluid travel-image" alt="">
+                    <span class="travel-badge">Travel</span>
+                    <div style="height: 50px;" class="">
+                        <h3 class="travel-title my-3">Wanderlust Chronicles: Sights That Took My Breath Away</h3>
+                    </div>
+                    <p class="travel-author">By <span class="auther-name">Admin</span> May 11,2020</p>
+                    <h4 class="travel-desc">From bustling cities to serene landscapes, this blog takes you on an adventure,
+                        inspiring your next getaway with stories, guides, and breathtaking photography.....</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Main Content Section-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Technology Section -->
+                <section class="" id="technology">
+                    <div class="section mb-4">
+                        <div class="section-header d-flex justify-content-between align-items-center">
+                            <h2>TECHNOLOGY</h2>
+                            <a href="#" class="view-all">VIEW ALL</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="article">
+                                    <img src="images/tech1.jpg" alt="Technology" class="img-fluid">
+                                    <span class="category-badge">TECHNOLOGY</span>
+                                    <h3>Luxury Watches Deal Builds on New York Shell Pile</h3>
+                                    <p>By <span class="auther-name">Admin</span>- May 14, 2016</p>
+                                    <p>More off this less hello salamander lied porpoise much over tightly circa...</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="small-article mb-3">
+                                    <img src="images/tech2.jpg" alt="Article" class="img-fluid">
+                                    <h4>Using Manual Camera Controls: Improving Image Quality</h4>
+                                    <p>May 14, 2016</p>
+                                </div>
+                                <div class="small-article">
+                                    <img src="images/tech3.jpg" alt="Article" class="img-fluid">
+                                    <h4>New Technique Turns Wind Into Reusable Energy Field</h4>
+                                    <p>May 14, 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Business Section -->
+                <section class="" id="business">
+                    <div class="section mb-4">
+                        <div class="section-header d-flex justify-content-between align-items-center">
+                            <h2>BUSINESS</h2>
+                            <a href="#" class="view-all">VIEW ALL</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="article">
+                                    <img src="images/bs.jpg" alt="Business" class="img-fluid">
+                                    <span class="category-badge">BUSINESS</span>
+                                    <h3>Small Business Owners Are Full of Passion And Smiles</h3>
+                                    <p>By <span class="auther-name">Admin</span>- July 15, 2016</p>
+                                    <p>More off this less hello salamander lied porpoise much over tightly circa...</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="small-article mb-3">
+                                    <img src="images/bs1.jpg" alt="Article" class="img-fluid">
+                                    <h4>6 Best Tips for Building a Good Shipping Boat</h4>
+                                    <p>July 14, 2016</p>
+                                </div>
+                                <div class="small-article">
+                                    <img src="images/bs2.jpg" alt="Article" class="img-fluid">
+                                    <h4>US President Address Calms The New Emerging Markets</h4>
+                                    <p>July 14, 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--Sports Section-->
+                <section class="" id="sport">
+                    <div class="section mb-4">
+                        <div class="section-header d-flex justify-content-between align-items-center">
+                            <h2>SPORTS</h2>
+                            <a href="#" class="view-all">VIEW ALL</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="article">
+                                    <img src="images/s1.jpg" alt="Business" class="img-fluid">
+                                    <span class="category-badge">Sports</span>
+                                    <h3>Small Business Owners Are Full of Passion And Smiles</h3>
+                                    <p>By <span class="auther-name">Admin</span>- July 15, 2016</p>
+                                    <p>More off this less hello salamander lied porpoise much over tightly circa...</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="small-article mb-3">
+                                    <img src="images/s2.jpg" alt="Article" class="img-fluid">
+                                    <h4>6 Best Tips for Building a Good Shipping Boat</h4>
+                                    <p>July 14, 2016</p>
+                                </div>
+                                <div class="small-article">
+                                    <img src="images/s3.jpg" alt="Article" class="img-fluid">
+                                    <h4>US President Address Calms The New Emerging Markets</h4>
+                                    <p>July 14, 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Lifestyle Section -->
+                <section class="mb-4" id="lifestyle">
+                    <h4 class="section-title">LIFESTYLE</h4>
+                    <div class="row">
+                        <div class="">
+                            <div class="card mb-3" style="max-width: 750px;">
+                                <div class="row g-0">
+                                    <div class="card-sec col-md-4 mt-2">
+                                        <img src="images/ls4.jpg" class="img-fluid rounded-start" alt="Lifestyle">
+                                        <span class="lifestyle-badge">Lifestyle</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Vast Farm Lands Still Rule Most of The Rural
+                                                Countryside
+                                            </h5>
+                                            <p class="card-text">More off this less hello salamander lied porpoise much
+                                                over tightly circa horse taped so innocuously outside crud mightily
+                                                rigorous…
+                                            </p>
+                                            <p class="card-text"><small class="text-danger">Last updated 3 mins
+                                               ago</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card mb-3" style="max-width: 750px;">
+                                <div class="row g-0">
+                                    <div class="card-sec col-md-4 mt-2">
+                                        <img src="images/ls3.jpg" class="img-fluid rounded-start" alt="Lifestyle">
+                                        <span class="lifestyle-badge">Lifestyle</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Build Your Own Laptop Screen With Recycled Parts</h5>
+                                            <p class="card-text">More off this less hello salamander lied porpoise much
+                                                over tightly circa horse taped so innocuously outside crud mightily
+                                                rigorous…</p>
+                                            <p class="card-text"><small class="text-danger">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card mb-3" style="max-width: 750px;">
+                                <div class="row g-0">
+                                    <div class="card-sec col-md-4 mt-2">
+                                        <img src="images/ls2.jpg" class="img-fluid rounded-start" alt="Lifestyle">
+                                        <span class="lifestyle-badge">Lifestyle</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">24K Classic American Cars Hit The Streets of Hong
+                                                Kong</h5>
+                                            <p class="card-text">More off this less hello salamander lied porpoise much
+                                                over tightly circa horse taped so innocuously outside crud mightily
+                                                rigorous…</p>
+                                            <p class="card-text"><small class="text-danger">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card mb-3" style="max-width: 750px;">
+                                <div class="row g-0">
+                                    <div class="card-sec col-md-4 mt-2">
+                                        <img src="images/ls1.jpg" class="img-fluid rounded-start" alt="Lifestyle">
+                                        <span class="lifestyle-badge">Lifestyle</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">These Cool Glasses Automatically Adjust to Your Eyes
+                                            </h5>
+                                            <p class="card-text">More off this less hello salamander lied porpoise much
+                                                over tightly circa horse taped so innocuously outside crud mightily
+                                                rigorous…</p>
+                                            <p class="card-text"><small class="text-danger">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Sidebar Section-->
+            <div class="sidebar col-lg-4 ps-5">
+                <!-- Follow Us Section -->
+                <section class="follow-us mb-4 text-center">
+                    <h4 class="sidebar-title">FOLLOW US</h4>
+                    <div class="underline"></div>
+                    <div class="social-buttons">
+                        <a href="#" class="social-icon" data-color="#3b5998"><i class="fab fa-facebook-f"></i>
+                            Facebook</a>
+                        <a href="#" class="social-icon" data-color="#c8232c"><i class="fab fa-pinterest"></i>
+                            Pinterest</a>
+                        <a href="#" class="social-icon" data-color="#1da1f2"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                </section>
+
+                <!-- Popular Section -->
+                <section class="popular-section">
+                    <h4 class="sidebar-title">POPULAR</h4>
+                    <div class="underline"></div>
+                    <div class="post-item">
+                        <div class="post-image">
+                            <img src="images/p1.jpg" alt="Post 1" class="img-fluid">
+                            <span class="post-badge">1</span>
+                        </div>
+                        <h5 class="post-title">3 Reasons to Chuck Coworking and Get a Real Office</h5>
+                        <p class="post-meta">By <span class="author">Admin</span> - May 10, 2021</p>
+                    </div>
+                    <div class="post-item">
+                        <div class="post-image">
+                            <img src="images/p2.jpg" alt="Post 2" class="img-fluid">
+                            <span class="post-badge">2</span>
+                        </div>
+                        <h5 class="post-title">Amazon's Next Alexa Devices Will Intercom Capabilities</h5>
+                        <p class="post-meta">By <span class="author">Admin</span> - May 04, 2022</p>
+                    </div>
+                    <div class="post-item">
+                        <div class="post-image">
+                            <img src="images/p3.jpg" alt="Post 3" class="img-fluid">
+                            <span class="post-badge">3</span>
+                        </div>
+                        <h5 class="post-title">Everything You Need to Know About New Room Rituals</h5>
+                        <p class="post-meta">By <span class="author">Admin</span> - May 14, 2024</p>
+                    </div>
+                </section>
+
+                <!-- Subscription Box -->
+                <div class="subscription-box my-5">
+                    <h4 class="subscription-title">Your daily updates</h4>
+                    <p class="subscription-description">Subscribe now. We'll make sure you never miss a thing</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control subscription-input"
+                                placeholder="Your email address..">
+                        </div>
+                        <button type="submit" class="btn btn-danger subscription-button">SUBSCRIBE</button>
+                    </form>
+                </div>
+
+                <!--Advertising Section-->
+                <section class="adv mt-5">
+                    <img src="images/adv.png" width="350px" height="auto" alt="Advertise" class="img-fluid">
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us-section my-5" id="contact" >
+        <div class="container">
+            <div class="row">
+                <!-- Image Column -->
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="images/contact.jpg" alt="Contact Image" class="img-fluid contact-image">
+                </div>
+
+                <!-- Form Column -->
+                <div class="col-md-6 my-5">
+                    <div class="contact-form-box p-4">
+                        <h3>Contact Us</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="fw-bold">.Blog</h5>
+                    <p>Insecurity is a waste of time. When I was young, I lived like an old woman, and when I got old, I
+                        had to live like a young person. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Latest Posts -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">LATEST POSTS</h5>
+                    <ul class="footer-posts">
+                        <li>
+                            <img src="images/tech2.jpg" alt="post1" class="post-thumb">
+                            <div class="post-info">
+                                <a href="#">3 Outfits That Will Amaze You on Coming Holiday</a>
+                                <small>August 14, 2024</small>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/t2.jpg" alt="post2" class="post-thumb">
+                            <div class="post-info">
+                                <a href="#">Small Business Owners Are Full of Passion And Smiles</a>
+                                <small>July 15, 2024</small>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/t1.jpg" alt="post3" class="post-thumb">
+                            <div class="post-info">
+                                <a href="#">6 Best Tips for Building a Good Shipping Boat</a>
+                                <small>July 14, 2024</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">POPULAR POSTS</h5>
+                    <ul class="footer-posts">
+                        <li>
+                            <img src="images/p2.jpg" alt="post4" class="post-thumb">
+                            <div class="post-info">
+                                <a href="#">3 Outfits That Will Amaze You on Coming Holiday</a>
+                                <small>August 14, 2022</small>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/s2.jpg" alt="post5" class="post-thumb">
+                            <div class="post-info">
+                                <a href="#">Amazing Things You May Have Missed Growing Up</a>
+                                <small>May 14, 2023</small>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/ls3.jpg" alt="post6" class="post-thumb">
+                            <div class="post-info">
+                                <a href="#">The Ash Wednesday Selfie Trend Has Patriots Debating</a>
+                                <small>May 15, 2024</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="text-center mt-4">
+                <p>Copyright © 2024. All rights reserved.<br>by <a href="#"
+                        class="text-primary">Ronak Ara</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--JavaScript for hover effects-->
+    <script>
+
+        const socialIcons = document.querySelectorAll('.social-icon');
+
+        socialIcons.forEach(icon => {
+            const originalColor = icon.style.backgroundColor;
+
+            icon.addEventListener('mouseenter', () => {
+                const color = icon.getAttribute('data-color');
+                if (color) {
+                    icon.style.backgroundColor = color;
+                    icon.style.color = '#fff';
+                }
+            });
+
+            icon.addEventListener('mouseleave', () => {
+                icon.style.backgroundColor = originalColor;
+                icon.style.color = '#000';
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

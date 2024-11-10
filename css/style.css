@@ -1,0 +1,600 @@
+* {
+  font-family: "Roboto", serif;
+}
+
+.container-fluid {
+  max-width: 100%;
+}
+
+::selection {
+  background-color: red;
+  color: white;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.356);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Centered caption text */
+.centered-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  max-width: 90%;
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+@media (max-width: 768px) {
+  
+  #carouselExampleInterval {
+    width: 100%; /* Full width on mobile */
+    height: auto !important;
+    max-width: 100vw !important; /* Prevent horizontal overflow */
+    border-radius: 0; /* Remove border-radius for clean mobile look */
+  }
+  .carousel-caption {
+    top: 20%;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+
+  .carousel-caption a.btn {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+  }
+
+  .d-flex {
+    justify-content: start;
+}
+
+}
+
+
+.container-fluid {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+
+
+/* Styling for the About Section*/
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.btn-primary:hover {
+  background-color: tomato !important;
+  border-color: tomato !important;
+}
+
+
+
+.blog h1 {
+  font-weight: bold !important;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+
+
+
+/* Styling for Travel blog */
+
+.travel {
+  border-bottom: 2px solid tomato;
+  width: 3%;
+  margin: 40px 0px;
+}
+
+.travel-image:hover,
+.travel-title,
+.travel-title:hover,
+.travel-author,
+.travel-author .auther-name,
+.travel-desc {
+  cursor: pointer;
+}
+
+.travel-image:hover {
+  opacity: 0.9;
+}
+
+
+.travel-sec .travel-badge {
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+
+}
+
+.travel-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.travel-title:hover {
+  color: #302e2e;
+}
+
+.travel-author {
+  font-size: 0.8em;
+  color: #999;
+}
+
+.travel-author .auther-name {
+  color: tomato;
+}
+
+.travel-desc {
+  font-size: 0.9em;
+  color: #272727;
+  text-align: justify;
+
+}
+
+/* Styling for Main Content Section*/
+
+
+.section-title,
+.section-header h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid tomato;
+  width: 5%;
+  padding-bottom: 5px;
+}
+
+.section-header .view-all {
+  font-size: 0.8rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.small-article {
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+}
+
+.small-article img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.small-article h4 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+}
+
+.article h3 {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.article p {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.article .category-badge {
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+
+}
+
+.article .auther-name {
+  color: tomato;
+}
+
+.card {
+  border: none !important;
+
+}
+
+.card .img {
+  position: relative;
+}
+
+.card-sec .lifestyle-badge {
+  position: absolute;
+  left: 0px;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+@media (max-width: 767px) {
+
+  .article,
+  .small-article {
+    text-align: center;
+  }
+
+  .small-article img {
+    max-width: 100px;
+  }
+}
+
+/* Styling for Sidebar */
+
+.sidebar{
+
+padding: 0px 30px 0px;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #000;
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.underline {
+  width: 50px;
+  height: 2px;
+  background-color: red;
+  margin: 0.5rem auto 1rem;
+}
+
+/* Follow Us Section */
+.follow-us .social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+.social-icon i {
+  font-size: 1.0rem;
+  margin-right: 5px;
+}
+
+.social-icon {
+  color: #000;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-color: #000;
+  border-radius: 5px;
+  flex: 1 1 45%;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #fff;
+  border: 2px solid #ffffff;
+}
+
+.social-icon.instagram:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #fff !important;
+}
+
+
+/* Popular Section */
+.popular-section .post-item {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.popular-section .post-image {
+  position: relative;
+}
+
+.popular-section .post-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.popular-section .post-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+
+.popular-section .post-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.popular-section .post-meta {
+  font-size: 0.7rem;
+  color: #888;
+}
+
+.popular-section .post-meta .author {
+  color: red;
+}
+
+
+/* Subscription Box Styles */
+.subscription-box {
+  border: 1px solid #ddd;
+  padding: 25px;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.subscription-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.subscription-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.subscription-button {
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e60000;
+  border: none;
+  padding: 10px 0;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.subscription-button:hover {
+  background-color: #cc0000;
+}
+
+.adv {
+  text-align: center;
+}
+
+/* Contact Form Section */
+.contact-us-section {
+  background-color: #f9f9f9;
+}
+
+.contact-image {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+
+.btn-submit {
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 767px) {
+  .contact-form-box {
+    margin-top: 20px;
+  }
+}
+
+.footer {
+  background-color: #222;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+  background-color: #333;
+  color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: tomato;
+}
+
+.footer-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-posts li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-posts .post-thumb {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.footer-posts .post-info a {
+  color: #ddd;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-posts .post-info a:hover {
+  color: #fff;
+}
+
+.footer-posts .post-info small {
+  display: block;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* Footer Bottom */
+.footer .text-center {
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+.footer .text-center a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer .text-center a:hover {
+  color: #0099cc;
+}
